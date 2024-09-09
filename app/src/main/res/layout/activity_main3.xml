@@ -43,9 +43,9 @@
         android:background="@drawable/text_border2"
         android:ems="10"
         android:inputType="text"
+        android:paddingStart="70sp"
         android:textColor="@color/black"
         android:textSize="18sp"
-        android:paddingStart="70sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.427"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,9 +74,9 @@
         android:background="@drawable/text_border2"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:textSize="18sp"
         android:paddingStart="70dp"
         android:textColor="@color/black"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.431"
         app:layout_constraintStart_toStartOf="parent"
@@ -126,4 +126,43 @@
         app:layout_constraintTop_toTopOf="@+id/editTextName"
         app:layout_constraintVertical_bias="0.476"
         app:srcCompat="@drawable/orange_profile" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="32dp"
+        android:layout_height="33dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/EmailAddressText"
+        app:layout_constraintEnd_toEndOf="@+id/EmailAddressText"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="@+id/EmailAddressText"
+        app:layout_constraintTop_toTopOf="@+id/EmailAddressText"
+        app:layout_constraintVertical_bias="0.4"
+        app:srcCompat="@drawable/orange_email" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="32dp"
+        android:layout_height="33dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/TextPassword"
+        app:layout_constraintEnd_toEndOf="@+id/TextPassword"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="@+id/TextPassword"
+        app:layout_constraintTop_toTopOf="@+id/TextPassword"
+        app:layout_constraintVertical_bias="0.4"
+        app:srcCompat="@drawable/orange_lock" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="32dp"
+        android:layout_height="33dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/TextPassword"
+        app:layout_constraintEnd_toEndOf="@+id/TextPassword"
+        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/TextPassword"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/orange_hidepass" />
 </androidx.constraintlayout.widget.ConstraintLayout>

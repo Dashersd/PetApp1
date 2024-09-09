@@ -5,4 +5,5 @@
     <string name="password">Password</string>
     <string name="log_in">Log In</string>
     <string name="log_in_with_social_media">Log in with Social Media</string>
+    <string name="don_t_have_and_account">Don’t have and account?</string>
 </resources>

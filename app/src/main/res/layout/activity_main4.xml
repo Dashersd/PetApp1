@@ -216,6 +216,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="92dp"
         android:layout_marginTop="24dp"
+        android:background="@drawable/custom_checkbox"
         android:drawableEnd="@drawable/ic_female"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView18" />
@@ -241,6 +242,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:drawableEnd="@drawable/ic_male"
+        android:background="@drawable/custom_checkbox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.395"
         app:layout_constraintStart_toEndOf="@+id/checkBox"

@@ -1,6 +1,9 @@
 package com.example.petapp1;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +22,17 @@ public class MainActivity3 extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+        Button button = findViewById(R.id.button3);
+
+        // Set an OnClickListener for the button
+        button .setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Create an Intent to navigate to the SecondActivity
+                Intent intent = new Intent(MainActivity3.this, MainActivity4.class);
+                startActivity(intent);
+            }
         });
     }
 }

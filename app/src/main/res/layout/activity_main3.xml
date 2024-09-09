@@ -157,14 +157,15 @@
         android:id="@+id/imageView12"
         android:layout_width="32dp"
         android:layout_height="33dp"
-        android:importantForAccessibility="no"
+        android:importantForAccessibility="yes"
         app:layout_constraintBottom_toBottomOf="@+id/TextPassword"
         app:layout_constraintEnd_toEndOf="@+id/TextPassword"
         app:layout_constraintHorizontal_bias="0.929"
         app:layout_constraintStart_toEndOf="@+id/imageView11"
         app:layout_constraintTop_toTopOf="@+id/TextPassword"
         app:layout_constraintVertical_bias="0.5"
-        app:srcCompat="@drawable/orange_hidepass" />
+        app:srcCompat="@drawable/orange_hidepass"
+        tools:ignore="ContentDescription" />
 
     <Button
         android:id="@+id/button3"

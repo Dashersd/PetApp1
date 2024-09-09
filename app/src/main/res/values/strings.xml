@@ -2,4 +2,5 @@
     <string name="app_name">PetApp1</string>
     <string name="sign_in">Sign In</string>
     <string name="email">Email</string>
+    <string name="password">Password</string>
 </resources>

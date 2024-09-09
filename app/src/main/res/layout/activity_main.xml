@@ -13,12 +13,12 @@
         android:id="@+id/imageView1"
         android:layout_width="360dp"
         android:layout_height="207dp"
-        android:layout_marginTop="52dp"
-        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.087"
         app:srcCompat="@drawable/ic_logo"
         tools:ignore="MissingConstraints" />
 

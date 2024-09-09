@@ -34,5 +34,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button signbutton = findViewById(R.id.button2);
+
+        // Set an OnClickListener for the button
+        signbutton .setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Create an Intent to navigate to the SecondActivity
+                Intent intent = new Intent(MainActivity.this, MainActivity3.class);
+                startActivity(intent);
+            }
+        });
     }
 }

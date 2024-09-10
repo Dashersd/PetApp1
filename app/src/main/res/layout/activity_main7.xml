@@ -40,20 +40,19 @@
         android:id="@+id/editTextText"
         android:layout_width="337dp"
         android:layout_height="54dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:background="@drawable/text_border"
         android:ems="10"
         android:hint="Search"
-        android:textColorHint="#6A6868"
         android:inputType="text"
-        android:textColor="@color/black"
-        android:textSize="18sp"
         android:paddingStart="60dp"
+        android:textColor="@color/black"
+        android:textColorHint="#6A6868"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView44"
-        tools:ignore="HardcodedText,RtlSymmetry" />
+        tools:ignore="Autofill,HardcodedText,RtlSymmetry" />
 
     <ImageView
         android:id="@+id/imageView37"
@@ -67,4 +66,17 @@
         app:layout_constraintVertical_bias="0.523"
         app:srcCompat="@drawable/ic__glass"
         tools:ignore="ContentDescription" />
+
+    <ScrollView
+        android:layout_width="367dp"
+        android:layout_height="708dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText">
+
+
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

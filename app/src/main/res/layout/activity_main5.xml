@@ -69,8 +69,8 @@
         android:layout_marginStart="8dp"
         android:text="Hadjie"
         android:textColor="@color/black"
-        android:textStyle="bold"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView27"
         app:layout_constraintStart_toEndOf="@+id/imageView27"
         app:layout_constraintTop_toTopOf="@+id/imageView27"
@@ -116,8 +116,8 @@
         android:background="@drawable/text_boarder4"
         android:drawableStart="@drawable/ic_scale"
         android:padding="10dp"
-        android:textColor="@color/black"
         android:text="Weight"
+        android:textColor="@color/black"
         android:textSize="11sp"
         app:layout_constraintStart_toEndOf="@+id/imageView26"
         app:layout_constraintTop_toTopOf="@+id/imageView25"
@@ -131,8 +131,8 @@
         android:drawableStart="@drawable/ic_calendar"
         android:padding="10dp"
         android:text="Appointment"
-        android:textSize="10sp"
         android:textColor="@color/black"
+        android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="@+id/button6"
         app:layout_constraintEnd_toEndOf="@+id/imageView25"
         app:layout_constraintHorizontal_bias="0.409"
@@ -167,8 +167,8 @@
         android:drawableStart="@drawable/ic_injection"
         android:padding="10dp"
         android:text="Vaccine"
-        android:textSize="10sp"
         android:textColor="@color/black"
+        android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView25"
         app:layout_constraintHorizontal_bias="0.384"
         app:layout_constraintStart_toEndOf="@+id/button8"
@@ -200,8 +200,8 @@
         android:drawableStart="@drawable/ic_notification"
         android:padding="10dp"
         android:text="Reminder"
-        android:textSize="10sp"
         android:textColor="@color/black"
+        android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView25"
         app:layout_constraintHorizontal_bias="0.377"
         app:layout_constraintStart_toEndOf="@+id/button10"
@@ -240,5 +240,69 @@
         app:layout_constraintHorizontal_bias="0.272"
         app:layout_constraintStart_toEndOf="@+id/button12"
         app:layout_constraintTop_toBottomOf="@+id/button11"
-        app:layout_constraintVertical_bias="0.538" />
+        app:layout_constraintVertical_bias="0.538"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:srcCompat="@drawable/underline"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Reminders"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView28"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="332dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView28"
+        app:srcCompat="@drawable/background2"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="332dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView29"
+        app:srcCompat="@drawable/background2"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="332dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView30"
+        app:srcCompat="@drawable/background2"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

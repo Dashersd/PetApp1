@@ -1,11 +1,13 @@
 package com.example.petapp1;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.GridLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -55,6 +57,16 @@ public class MainActivity6 extends AppCompatActivity {
                 calendarGrid.addView(dayTextView);
             }
         }
+        ImageView imageView = findViewById(R.id.imageView35);
+
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Open the new activity
+                Intent intent = new Intent(MainActivity6.this, MainActivity7.class);
+                startActivity(intent);
+            }
+        });
     }
 
     // Method to handle the day selection and toggle background

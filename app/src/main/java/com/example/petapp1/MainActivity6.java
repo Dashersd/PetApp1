@@ -4,12 +4,15 @@ import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.View;
 import android.widget.GridLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity6 extends AppCompatActivity {
+
+    private TextView selectedDayTextView; // To store the currently selected day
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -34,19 +37,35 @@ public class MainActivity6 extends AppCompatActivity {
 
         // Add TextViews dynamically for each day of the month
         for (String day : days) {
-            TextView dayTextView = new TextView(this);
-            dayTextView.setText(day);
-            dayTextView.setGravity(Gravity.CENTER);
-            dayTextView.setTextColor(Color.BLACK);
-            dayTextView.setPadding(16, 16, 16, 16);
-
-            // Style specific days (e.g. highlight the 5th)
-            if (day.equals("5")) {
-                dayTextView.setBackgroundResource(R.drawable.circle_background);
+            if (!day.isEmpty()) {
+                TextView dayTextView = new TextView(this);
+                dayTextView.setText(day);
+                dayTextView.setGravity(Gravity.CENTER);
                 dayTextView.setTextColor(Color.BLACK);
-            }
+                dayTextView.setPadding(18, 16, 16, 16);
 
-            calendarGrid.addView(dayTextView);
+                // Set an OnClickListener to handle day selection
+                dayTextView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        handleDaySelection((TextView) v);
+                    }
+                });
+
+                calendarGrid.addView(dayTextView);
+            }
         }
+    }
+
+    // Method to handle the day selection and toggle background
+    private void handleDaySelection(TextView dayTextView) {
+        if (selectedDayTextView != null) {
+            // Remove the circle from the previously selected day
+            selectedDayTextView.setBackgroundResource(0); // Clear background
+        }
+
+        // Set the circular background to the currently selected day
+        dayTextView.setBackgroundResource(R.drawable.circle_background);
+        selectedDayTextView = dayTextView; // Update the selected day reference
     }
 }

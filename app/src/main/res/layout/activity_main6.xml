@@ -34,6 +34,7 @@
         android:columnCount="7"
         android:padding="10dp"
         android:rowCount="7"
+        android:background="@drawable/grid_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.304"
         app:layout_constraintStart_toStartOf="parent"

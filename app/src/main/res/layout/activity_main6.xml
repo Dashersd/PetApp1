@@ -207,8 +207,8 @@
 
     <TextView
         android:id="@+id/textView40"
-        android:layout_width="323dp"
-        android:layout_height="104dp"
+        android:layout_width="351dp"
+        android:layout_height="111dp"
         android:layout_marginTop="28dp"
         android:background="@drawable/round_background4"
         android:clickable="false"

@@ -229,7 +229,8 @@
         app:layout_constraintStart_toStartOf="@+id/textView40"
         app:layout_constraintTop_toTopOf="@+id/textView40"
         app:layout_constraintVertical_bias="0.17"
-        app:srcCompat="@drawable/ic_groom" />
+        app:srcCompat="@drawable/ic_groom"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/textView41"
@@ -303,7 +304,8 @@
         app:layout_constraintStart_toEndOf="@+id/textView33"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/orange_plus" />
+        app:srcCompat="@drawable/orange_plus"
+        tools:ignore="ContentDescription" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

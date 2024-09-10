@@ -480,7 +480,8 @@
         app:layout_constraintEnd_toEndOf="@+id/textView30"
         app:layout_constraintHorizontal_bias="0.772"
         app:layout_constraintStart_toEndOf="@+id/textView31"
-        app:layout_constraintTop_toTopOf="@+id/textView30" />
+        app:layout_constraintTop_toTopOf="@+id/textView30"
+        tools:ignore="HardcodedText,SmallSp" />
 
     <Button
         android:id="@+id/button19"

@@ -504,13 +504,59 @@
         android:id="@+id/textView34"
         android:layout_width="223dp"
         android:layout_height="66dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/btn_background2"
         android:clickable="false"
         android:focusable="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="36dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView34"
+        app:layout_constraintStart_toStartOf="@+id/textView34"
+        app:layout_constraintTop_toTopOf="@+id/textView34"
+        app:layout_constraintVertical_bias="0.476"
+        app:srcCompat="@drawable/white_paw"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="36dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView34"
+        app:layout_constraintStart_toEndOf="@+id/imageView30"
+        app:layout_constraintTop_toTopOf="@+id/textView34"
+        app:layout_constraintVertical_bias="0.464"
+        app:srcCompat="@drawable/white_calendar"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView32"
+        android:layout_width="36dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView34"
+        app:layout_constraintStart_toEndOf="@+id/imageView31"
+        app:layout_constraintTop_toTopOf="@+id/textView34"
+        app:layout_constraintVertical_bias="0.464"
+        app:srcCompat="@drawable/white_person"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="36dp"
+        android:layout_height="38dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView34"
+        app:layout_constraintEnd_toEndOf="@+id/textView34"
+        app:layout_constraintStart_toEndOf="@+id/imageView32"
+        app:layout_constraintTop_toTopOf="@+id/textView34"
+        app:srcCompat="@drawable/ic_settings" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

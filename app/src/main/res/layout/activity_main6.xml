@@ -27,16 +27,15 @@
 
     <GridLayout
         android:id="@+id/calendar_grid"
-        android:layout_width="388dp"
-        android:layout_height="188dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="391dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="16dp"
         android:alignmentMode="alignMargins"
+        android:background="@drawable/grid_background"
         android:columnCount="7"
         android:padding="10dp"
         android:rowCount="7"
-        android:background="@drawable/grid_background"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.304"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/month_year_text">
 
@@ -44,57 +43,57 @@
         <TextView
             android:layout_width="52dp"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="Sun"
             android:textColor="@color/black"
-            android:gravity="center"
             tools:ignore="HardcodedText" />
 
         <TextView
             android:layout_width="52dp"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="Mon"
             android:textColor="@color/black"
-            android:gravity="center"
             tools:ignore="HardcodedText" />
 
         <TextView
             android:layout_width="46dp"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="Tue"
             android:textColor="@color/black"
-            android:gravity="center"
             tools:ignore="HardcodedText" />
 
         <TextView
             android:layout_width="52dp"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="Wed"
             android:textColor="@color/black"
-            android:gravity="center"
             tools:ignore="HardcodedText" />
 
         <TextView
             android:layout_width="59dp"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="Thu"
             android:textColor="@color/black"
-            android:gravity="center"
             tools:ignore="HardcodedText" />
 
         <TextView
             android:layout_width="54dp"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="Fri"
             android:textColor="@color/black"
-            android:gravity="center"
             tools:ignore="HardcodedText" />
 
         <TextView
             android:layout_width="46dp"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="Sat"
             android:textColor="@color/black"
-            android:gravity="center"
             tools:ignore="HardcodedText" />
 
         <!-- Dynamic Dates will be populated here -->

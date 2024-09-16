@@ -3,7 +3,7 @@
     android:shape="rectangle">
 
     <!-- Set rounded corners -->
-    <corners android:radius="8dp" />
+    <corners android:radius="10dp" />
 
     <!-- Set the button background color (orange shade) -->
     <solid android:color="#F7EED3" />

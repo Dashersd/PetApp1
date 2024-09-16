@@ -153,5 +153,17 @@
             android:layout_marginTop="8dp"
             android:text="• Vaccination \n • Routine Check-ups \n • Pet Boarding \n • Laboratory Services \n • Grooming"
             tools:ignore="HardcodedText" />
+
+        <Button
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="18dp"
+            android:layout_gravity="center"
+            android:text="Book Appointment"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:background="@drawable/round_background"
+            tools:ignore="HardcodedText" />
     </LinearLayout>
 </ScrollView>

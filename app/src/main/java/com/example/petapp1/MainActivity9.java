@@ -1,7 +1,10 @@
 package com.example.petapp1;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.Spinner;
 
 
@@ -33,6 +36,16 @@ public class MainActivity9 extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+        ImageView imageView = findViewById(R.id.back_arrow);
+
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Open the new activity
+                Intent intent = new Intent(MainActivity9.this, MainActivity7.class);
+                startActivity(intent);
+            }
         });
 
         // Set up the Spinner for selecting pets

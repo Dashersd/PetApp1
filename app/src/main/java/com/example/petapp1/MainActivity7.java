@@ -34,6 +34,7 @@ public class MainActivity7 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         Button button = findViewById(R.id.view_profile_button_1);
 // Set an OnClickListener for the button
         button.setOnClickListener(new View.OnClickListener() {

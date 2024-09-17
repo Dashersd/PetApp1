@@ -1,11 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFF6E9"
     tools:context=".MainActivity9">
-
     <!-- Back Arrow -->
     <ImageView
         android:id="@+id/back_arrow"
@@ -17,7 +18,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="ContentDescription" />
-
     <!-- Title -->
     <TextView
         android:id="@+id/title"
@@ -86,7 +86,6 @@
         app:layout_constraintTop_toTopOf="@+id/pet_spinner"
         app:layout_constraintVertical_bias="0.5"
         tools:ignore="ContentDescription" />
-
     <TextView
         android:id="@+id/care_services_label"
         android:layout_width="wrap_content"
@@ -128,7 +127,6 @@
         app:layout_constraintTop_toTopOf="@+id/services_spinner"
         app:layout_constraintVertical_bias="0.5"
         tools:ignore="ContentDescription" />
-
     <TextView
         android:id="@+id/reason_label"
         android:layout_width="wrap_content"
@@ -144,28 +142,38 @@
         tools:ignore="HardcodedText" />
 
     <!-- Next Button -->
+
     <EditText
         android:id="@+id/reason_text"
-        android:layout_width="376dp"
-        android:layout_height="226dp"
+        android:layout_width="357dp"
+        android:layout_height="223dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/text_boarder4"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/reason_label" />
 
     <Button
         android:id="@+id/next_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="#FF7F3E"
+        android:layout_width="293dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/btn_background4"
         android:text="NEXT"
         android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/reason_text" />
+        app:layout_constraintTop_toBottomOf="@id/reason_text"
+        tools:ignore="HardcodedText" />
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

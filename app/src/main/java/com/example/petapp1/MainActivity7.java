@@ -43,6 +43,16 @@ public class MainActivity7 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button button1 = findViewById(R.id.book_appointment_button_1);
+        // Set an OnClickListener for the button
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Create an Intent to navigate to the MainActivity5
+                Intent intent = new Intent(MainActivity7.this, MainActivity9.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

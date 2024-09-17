@@ -50,7 +50,7 @@ public class MainActivity9 extends AppCompatActivity {
 
         // Set up the Spinner for selecting pets
         ArrayAdapter<String> petAdapter = new ArrayAdapter<>(this,
-                android.R.layout.simple_spinner_item, new String[]{"Dog", "Cat", "Other"});
+                android.R.layout.simple_spinner_item, new String[]{"Dog", "Cat"});
         petAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         petSpinner.setAdapter(petAdapter);
 

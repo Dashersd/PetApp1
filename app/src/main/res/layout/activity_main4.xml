@@ -26,8 +26,8 @@
         android:layout_marginTop="28dp"
         android:text="Skip"
         android:textColor="@color/black"
-        android:textStyle="bold"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.552"
         app:layout_constraintStart_toEndOf="@+id/imageView16"
@@ -136,50 +136,33 @@
         app:layout_constraintVertical_bias="0.555"
         app:srcCompat="@drawable/ic_arrow_down" />
 
-    <EditText
-        android:id="@+id/editTextText3"
+    <Spinner
+        android:id="@+id/pet_spinner"
         android:layout_width="330dp"
         android:layout_height="51dp"
         android:layout_marginTop="12dp"
         android:background="@drawable/text_boarder3"
-        android:ems="10"
-        android:hint="Choose Pet Type"
-        android:importantForAutofill="no"
-        android:inputType="text"
-        android:textSize="18sp"
         android:paddingStart="60dp"
-        android:textColorHint="#6A6A6A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText2"
-        tools:ignore="HardcodedText,RtlSymmetry" />
+        style="@style/CustomSpinnerStyle2"
+        tools:ignore="RtlSymmetry" />
+
 
     <ImageView
         android:id="@+id/imageView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:importantForAccessibility="no"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextText3"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText3"
-        app:layout_constraintHorizontal_bias="0.047"
-        app:layout_constraintStart_toStartOf="@+id/editTextText3"
-        app:layout_constraintTop_toTopOf="@+id/editTextText3"
-        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintBottom_toBottomOf="@+id/pet_spinner"
+        app:layout_constraintEnd_toEndOf="@+id/pet_spinner"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="@+id/pet_spinner"
+        app:layout_constraintTop_toTopOf="@+id/pet_spinner"
+        app:layout_constraintVertical_bias="0.4"
         app:srcCompat="@drawable/ic_pets" />
-
-    <ImageView
-        android:id="@+id/imageView23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextText3"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText3"
-        app:layout_constraintHorizontal_bias="0.934"
-        app:layout_constraintStart_toEndOf="@+id/imageView22"
-        app:layout_constraintTop_toTopOf="@+id/editTextText3"
-        app:layout_constraintVertical_bias="0.666"
-        app:srcCompat="@drawable/ic_arrow_down"
-        tools:ignore="ContentDescription" />
 
     <EditText
         android:id="@+id/editTextText4"
@@ -195,7 +178,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText3"
+        app:layout_constraintTop_toBottomOf="@+id/pet_spinner"
         tools:ignore="Autofill,HardcodedText,RtlSymmetry" />
 
     <ImageView

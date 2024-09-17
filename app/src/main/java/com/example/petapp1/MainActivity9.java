@@ -56,7 +56,7 @@ public class MainActivity9 extends AppCompatActivity {
 
         // Set up the Spinner for selecting services
         ArrayAdapter<String> serviceAdapter = new ArrayAdapter<>(this,
-                android.R.layout.simple_spinner_item, new String[]{"Vaccination", "Grooming", "Checkup"});
+                android.R.layout.simple_spinner_item, new String[]{"Vaccination", "Grooming", "Checkup", "Surgery"});
         serviceAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         serviceSpinner.setAdapter(serviceAdapter);
     }
